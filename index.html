@@ -21,7 +21,7 @@
             height: 500px;
         }
         .fs{
-            font-size: 38pt;
+            font-size: 36pt;
         }
 
        
@@ -54,12 +54,16 @@
        <a class="navbar-brand d-none d-md-block" href="">
         <img class="logo " src="online-education-logo.jpg" alt="">
        </a>
+
+       <li class="nav-item d-block d-md-none mr-auto">
+        <a  href="">
+            <img class="logo " src="online-education-logo.jpg" alt="">
+        </a>
+       </li>
+
+
         <ul class="navbar nav ml-auto">
-            <li class="nav-item d-block d-md-none">
-                <a  href="">
-                    <img class="logo " src="online-education-logo.jpg" alt="">
-                </a>
-            </li>
+            
             <li class="nav-item">
                 <a class="nav-link" href="">products</a>
             </li>
@@ -114,23 +118,61 @@ Now, the page should prevent any overflow and horizontal scroll. Let me know if 
                 
                 <button class="btn btn-sm bg-primary">learn more</button>
                
-                    <h2 class="text-center">Why Choose Us?</h2>
+                    <h2 class="text-center text-un">Why Choose Us?</h2>
                     <div class="d-md-flex justify-content-center">
+                    
                        <div>
-                        <i class="fa-solid fa-person-chalkboard"></i>
-                        Engaging Lessons Designed by Experts <br>
-                  
-                    
-                        <i class="fa-solid fa-gamepad"></i>
-                        Interactive Games & Quizzes <br>
-                   
-                  
-                        <i class="fa-solid fa-brain"></i>
-                        Builds Creativity & Critical Thinking <br>
-                    
-                  
-                        <i class="fas fa-sync"></i>
-                        Learn Anytime, Anywhere
+                         <div class="d-flex align-items-center">
+                            <lottie-player 
+                              src="book.json"
+                              background="transparent"
+                              speed="1"
+                              style="width: 80px; height: 80px;"
+                              loop
+                              autoplay>
+                            </lottie-player>
+                            
+                            <span class="font-weight-bold"> Engaging Lessons Designed by Experts</span>
+                          </div>
+                     
+                          <div class="d-flex align-items-center">
+                            <lottie-player 
+                              src="think.json"
+                              background="transparent"
+                              speed="1"
+                              style="width: 80px; height: 80px;"
+                              loop
+                              autoplay>
+                            </lottie-player>
+                            
+                            <span class="font-weight-bold"> Builds Creativity & Critical Thinking </span>
+                          </div>
+
+                          <div class="d-flex align-items-center">
+                            <lottie-player 
+                              src="ideas.json"
+                              background="transparent"
+                              speed="1"
+                              style="width: 80px; height: 80px;"
+                              loop
+                              autoplay>
+                            </lottie-player>
+                            
+                            <span class="font-weight-bold"> Interactive Games & Quizzes </span>
+                          </div>
+
+                          <div class="d-flex align-items-center">
+                            <lottie-player 
+                              src="time.json"
+                              background="transparent"
+                              speed="1"
+                              style="width: 80px; height: 80px;"
+                              loop
+                              autoplay>
+                            </lottie-player>
+                            
+                            <span class="font-weight-bold">  Learn Anytime, Anywhere </span>
+                          </div>
                        </div>         
                         
                     </div>
@@ -144,7 +186,52 @@ Now, the page should prevent any overflow and horizontal scroll. Let me know if 
             <img src="online_education.gif" class="img-right"  alt="">
             
         </div>
-
+        
     </div>
+
+    <footer class="bg-info text-white pt-4 pb-2">
+        <div class="container">
+          <div class="row d-flex">
+      
+            <!-- About -->
+            <div class="col-md-4  order-md-1">
+              <h5 class="text-uppercase font-weight-bold">About Us</h5>
+              <p>We make learning fun for kids with games, stories, and creative videos. Join us to explore the world of knowledge!</p>
+            </div>
+      
+            <!-- Quick Links -->
+            <div class="col-md-4  order-3 order-md-3">
+               
+              <h5 class="text-uppercase font-weight-bold text-center">Quick Links</h5>
+             
+                <div class="d-flex justify-content-around ">
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-whatsapp fa-lg"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-linkedin fa-lg"></i></a>
+                    
+                  </div>
+              
+            </div>
+      
+            <!-- Contact Info -->
+            <div class="col-md-4 pt-4 pt-md-0  order-md-3">
+              <h5 class="text-uppercase font-weight-bold">Contact Us</h5>
+              <p>Gmail: support@kidslearn.com</p>
+              <p>Phone: +880 1770088271</p>
+              <p>Location: Dhaka, Bangladesh</p>
+            </div>
+      
+          </div>
+      
+          <hr class="bg-white">
+      
+          <!-- Copyright -->
+          <div class="text-center">
+            <p class="mb-0">&copy; 2025 KidsLearn. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
 </body>
 </html>
